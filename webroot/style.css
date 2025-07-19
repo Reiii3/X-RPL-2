@@ -5,4 +5,11 @@
 
 .navigasi {
   background-color: #1E40AF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigasi .logo-rpl-placeholder {
+  width: 4vw;
+  height: 4vw;
 }
