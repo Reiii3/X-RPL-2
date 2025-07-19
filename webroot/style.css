@@ -23,6 +23,7 @@
 .navigasi ul li a {
   text-decoration: none;
   color: white;
+  font-family: 'Inter', Sans-Serif;
 }
 
 .navigasi .logo-rpl-placeholder {
