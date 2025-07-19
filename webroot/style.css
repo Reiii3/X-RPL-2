@@ -12,6 +12,7 @@
 .navigasi ul li a {
   text-decoration: none;
   list-style: none;
+  color: white;
 }
 
 .navigasi .logo-rpl-placeholder {
