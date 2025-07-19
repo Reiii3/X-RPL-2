@@ -9,9 +9,18 @@
   justify-content: space-between;
 }
 
+.navigasi ul {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+
 .navigasi ul li {
-  text-decoration: none;
   list-style: none;
+}
+
+.navigasi ul li a {
+  text-decoration: none;
   color: white;
 }
 
