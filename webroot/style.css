@@ -24,6 +24,7 @@ body {
   flex-direction: column;
   gap: 2vw;
   align-items: center;
+  justify-content: center;
   background-color: gray;
 }
 
