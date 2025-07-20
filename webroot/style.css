@@ -97,6 +97,10 @@ body {
   align-content: center;
 }
 
+.laman-struckture .name {
+  margin-top: 1vw;
+}
+
 .laman-struckture .name p {
   text-align: center;
   color: #ccc;
