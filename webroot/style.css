@@ -40,6 +40,10 @@ body {
   font-family: 'Inter', Sans-Serif;
 }
 
+.navigasi-hidden li:hover {
+  color: #b5c6d9;
+}
+
 .navigasi .logo-rpl-placeholder {
   width: 10vw;
   height: 10vw;
