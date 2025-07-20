@@ -24,5 +24,4 @@ class MainWeb {
     });
   }
 }
-
-export default new MainWeb()
+new MainWeb()
