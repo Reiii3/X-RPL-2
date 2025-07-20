@@ -30,6 +30,8 @@ body {
 
 .navigasi-hidden ul li {
   list-style: none;
+  display: flex;
+  gap: 1vw;
 }
 
 .navigasi-hidden ul li a {
