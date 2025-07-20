@@ -31,6 +31,17 @@
   height: 10vw;
 }
 
+.placeholder-logo {
+  width: 15vw;
+  height: 15vw;
+}
+
+.placeholder-logo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .navigasi .logo-rpl-placeholder img {
   object-fit: cover;
   width: 100%;
