@@ -88,7 +88,7 @@ body {
 .laman-profile-murid {
   background-color: #111827;
   border-radius: 2vw;
-  padding-bottom: 0.5vw;
+  padding: 0.5vw 0 0.5vw;
 }
 
 .placeholder-profile {
