@@ -95,3 +95,8 @@ body {
   align-items: center;
   align-content: center;
 }
+
+.name p {
+  text-align: center;
+  color: #ccc;
+}
