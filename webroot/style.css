@@ -122,6 +122,7 @@ body {
 }
 
 .jadwal-class {
+  margin-top: 1.5vw;
   display: flex;
   flex-direction: column;
   align-content: center;
