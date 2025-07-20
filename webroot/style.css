@@ -57,6 +57,12 @@ body {
   height: 100%;
 }
 
+.button-navigasi {
+  background-color: #428dde;
+  border-radius: 2vw;
+  padding: 1vw;
+}
+
 .button-navigasi i {
   font-size: 4vw;
   color: ghostwhite;
