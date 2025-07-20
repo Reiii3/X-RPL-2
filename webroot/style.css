@@ -146,7 +146,13 @@ body {
 
 .card-jadwal .jadwal-day-teks {
   background-color: #ada4c1bf;
-  border-radius: 0 0 1.5vw 1.5vw;
+  border-radius: 1.5vw 1.5vw 0 0;
+  text-align: center;
+}
+
+.card-jadwal .jadwal-day-teks p {
+  font-family: 'inter', monospace;
+  color: #fbfafcbf;
 }
 
 .laman-profile-wali {
