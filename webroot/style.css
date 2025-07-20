@@ -90,12 +90,12 @@ body {
 .about-class {
   display: flex;
   flex-direction: column
-  gap: 1vw;
 }
 
 .laman-utama {
   margin-top: 1.5vw;
   padding: 1vw;
+  gap: 1vw;
 }
 
 .laman-utama .judul-laman {
