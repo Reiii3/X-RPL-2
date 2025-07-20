@@ -120,6 +120,16 @@ body {
   border-radius: 2vw;
 }
 
+.jadwal-class {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 1vw;
+  padding: 1vw;
+  background-color: #ab88f7bf;
+}
+
 .laman-profile-wali {
   background-color: #2E1F39;
   border-radius: 2vw;
