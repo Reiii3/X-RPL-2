@@ -10,6 +10,7 @@ class MainWeb {
   eventList() {
     this.idBtnNavigasi.addEventListener("click", () => {
       const idLayoutNavigasiHidden = document.querySelector('navigasi-hidden');
+      console.log("open")
       const height = idLayoutNavigasiHidden.scrollHeight + 'px';
       const open = idLayoutNavigasiHidden.style.height = height;
       const close = () => {
