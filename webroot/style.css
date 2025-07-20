@@ -51,5 +51,4 @@
 .about-class {
   display: flex;
   flex-direction: column
-  gap: 1.5vw;
 }
