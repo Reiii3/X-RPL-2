@@ -88,3 +88,10 @@ body {
   width: 20vw;
   height: 25vw;
 }
+
+.border-layout-murid {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  align-content: center;
+}
