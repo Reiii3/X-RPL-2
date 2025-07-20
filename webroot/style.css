@@ -40,7 +40,7 @@ body {
   font-family: 'Inter', Sans-Serif;
 }
 
-.navigasi-hidden li:hover {
+.navigasi-hidden li a:hover {
   transition: 0.3s ease;
   color: #c0f38b;
 }
