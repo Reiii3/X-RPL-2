@@ -52,5 +52,5 @@
   display: flex;
   gap: 1.5vw;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: row
 }
