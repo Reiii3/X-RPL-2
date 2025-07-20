@@ -137,6 +137,12 @@ body {
   height: 35vw;
 }
 
+.placeholder-profile img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .border-layout-murid {
   display: flex;
   gap: 1vw;
