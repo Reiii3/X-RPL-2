@@ -162,7 +162,7 @@ body {
 
 .laman-struckture .title {
   background-color: dimgray;
-  border-radius: 2vw;
+  border-radius: 0 0 2vw 2vw;
   padding-top: 0.5vw;
 }
 
