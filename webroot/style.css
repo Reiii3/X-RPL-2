@@ -116,6 +116,7 @@ body {
 .laman-struckture .name p {
   text-align: center;
   color: #ccc;
+  font-family: 'Popins', sans-serif;
 }
 
 .laman-struckture .title {
@@ -127,6 +128,7 @@ body {
 .laman-struckture .title p {
   text-align: center;
   color: #ccc;
+  font-family: 'Inter', sans-serif;
 }
 
 .laman-struckture h2 {
