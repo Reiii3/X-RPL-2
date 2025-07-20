@@ -138,6 +138,12 @@ body {
   gap: 1vw;
 }
 
+.laman-layout-card .card-jadwal {
+  width: 25vw;
+  background-color: #c0b0e3bf;
+  border-radius: 1.5vw;
+}
+
 .laman-profile-wali {
   background-color: #2E1F39;
   border-radius: 2vw;
