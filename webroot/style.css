@@ -94,7 +94,7 @@ body {
 .laman-profile-murid {
   background-color: #111827;
   border-radius: 2vw;
-  padding: 0.5vw 0 0.5vw;
+  padding: 0 0 0.5vw;
 }
 
 .placeholder-profile {
@@ -120,6 +120,8 @@ body {
 
 .laman-struckture .title {
   background-color: dimgray;
+  border-radius: 2vw;
+  padding-top: 0.5vw;
 }
 
 .laman-struckture .title p {
