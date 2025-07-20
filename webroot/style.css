@@ -26,11 +26,11 @@ body {
   background-color: gray;
 }
 
-.navigasi ul li {
+.navigasi-hidden ul li {
   list-style: none;
 }
 
-.navigasi ul li a {
+.navigasi-hidden ul li a {
   text-decoration: none;
   color: white;
   font-family: 'Inter', Sans-Serif;
