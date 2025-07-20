@@ -41,7 +41,8 @@ body {
 }
 
 .navigasi-hidden li:hover {
-  color: #b5c6d9;
+  transition: 0.3s ease;
+  color: #c0f38b;
 }
 
 .navigasi .logo-rpl-placeholder {
