@@ -140,6 +140,7 @@ body {
 
 .laman-layout-card .card-jadwal {
   width: 40vw;
+  height: 50vw;
   background-color: #ad92e7bf;
   border-radius: 1.5vw;
 }
