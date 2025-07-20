@@ -17,6 +17,7 @@ body {
 .navigasi-hidden {
   height: 0;
   overflow: hidden;
+  transition: 0.3s ease;
 }
 .navigasi ul {
   display: flex;
