@@ -10,7 +10,7 @@ class MainWeb {
   }
   eventList() {
     this.idBtnNavigasi.addEventListener("click", () => {
-      console.log("open")
+      console.log("open");
       const idLayoutNavigasiHidden = document.querySelector('.navigasi-hidden');
       const height = idLayoutNavigasiHidden.scrollHeight + 'px';
       const open = idLayoutNavigasiHidden.style.height = height;
@@ -19,9 +19,9 @@ class MainWeb {
         requestAnimationFrame(() => {
           idLayoutNavigasiHidden.style.height = "0";
         });
-        this.navigasiStats ? open : close();
-        this.navigasiStats = !this.navigasiStats;
       };
+      this.navigasiStats ? open : close();
+      this.navigasiStats = !this.navigasiStats;
     });
   }
 }
