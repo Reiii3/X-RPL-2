@@ -5,13 +5,13 @@
 
 body {
   background-color: #F1F5F9;
+  padding: 1vw;
 }
 
 .navigasi {
   background-color: #1E40AF;
   display: flex;
   justify-content: space-between;
-  padding: 1vw;
 }
 
 .navigasi ul {
@@ -71,4 +71,15 @@ body {
 .judul-laman h1 {
   font-size: 2rem;
   color: #374151;
+}
+
+.laman-struckture {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 1vw;
+  padding: 1vw;
+  background-color: #111827;
+  border-radius: 2vw;
 }
