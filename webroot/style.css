@@ -13,6 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1vw;
+  border-radius: 2vw 2vw 0 0;
 }
 .navigasi-hidden {
   height: 0;
