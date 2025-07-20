@@ -32,6 +32,12 @@ body {
   list-style: none;
   display: flex;
   gap: 1vw;
+  align-items: center;
+}
+
+.navigasi-hidden ul li i {
+  color: #79eaf5;
+  font-size: 1.2rem;
 }
 
 .navigasi-hidden ul li a {
