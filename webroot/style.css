@@ -13,7 +13,10 @@ body {
   justify-content: space-between;
   padding: 1vw;
 }
-
+.navigasi-hidden {
+  height: 0;
+  overflow: hidden;
+}
 .navigasi ul {
   display: flex;
   gap: 2vw;
