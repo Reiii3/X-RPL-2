@@ -152,6 +152,7 @@ body {
 
 .card-jadwal .jadwal-day-teks p {
   font-family: 'inter', monospace;
+  font-size: 1.2rem;
   color: #fbfafcbf;
 }
 
