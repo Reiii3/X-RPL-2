@@ -134,6 +134,11 @@ body {
   border-radius: 2vw;
 }
 
+.jadwal-class h2 {
+  text-align: center;
+  color: #ccc;
+}
+
 .jadwal-class .laman-layout-card {
   display: flex;
   align-items: center;
