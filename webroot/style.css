@@ -144,6 +144,11 @@ body {
   border-radius: 1.5vw;
 }
 
+.card-jadwal .jadwal-day-teks {
+  background-color: #ada4c1bf;
+  border-radius: 0 0 1.5vw 1.5vw;
+}
+
 .laman-profile-wali {
   background-color: #2E1F39;
   border-radius: 2vw;
