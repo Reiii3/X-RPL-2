@@ -112,6 +112,11 @@ body {
   color: #ccc;
 }
 
+.laman-struckture .title p {
+  text-align: center;
+  color: #ccc;
+}
+
 .laman-struckture h2 {
   color: #F9FAFB;
 }
