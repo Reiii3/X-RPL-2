@@ -23,7 +23,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2vw;
-  align-items: center;
   justify-content: flex-start;
   background-color: gray;
 }
