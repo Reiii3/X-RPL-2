@@ -21,6 +21,7 @@ body {
 }
 .navigasi-hidden ul {
   display: flex;
+  flex-direction: column;
   gap: 2vw;
   align-items: center;
   background-color: gray;
