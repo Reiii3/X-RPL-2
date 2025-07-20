@@ -67,3 +67,8 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.judul-laman h1 {
+  font-size: 2rem;
+  color: #374151;
+}
