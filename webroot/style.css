@@ -118,6 +118,10 @@ body {
   color: #ccc;
 }
 
+.laman-struckture .title {
+  background-color: dimgray;
+}
+
 .laman-struckture .title p {
   text-align: center;
   color: #ccc;
