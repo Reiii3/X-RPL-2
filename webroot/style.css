@@ -25,6 +25,7 @@ body {
   gap: 2vw;
   justify-content: flex-start;
   background-color: gray;
+  padding: 1vw;
 }
 
 .navigasi-hidden ul li {
