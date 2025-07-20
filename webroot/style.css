@@ -57,6 +57,10 @@ body {
   flex-direction: column
 }
 
+.laman-utama {
+  margin-top: 1.5vw;
+}
+
 .laman-utama .judul-laman {
   display: flex;
   flex-direction: column;
