@@ -18,6 +18,7 @@ body {
   display: flex;
   gap: 2vw;
   align-items: center;
+  background-color: gray;
 }
 
 .navigasi ul li {
