@@ -19,7 +19,7 @@ body {
   overflow: hidden;
   transition: 0.3s ease;
 }
-.navigasi ul {
+.navigasi-hidden ul {
   display: flex;
   gap: 2vw;
   align-items: center;
