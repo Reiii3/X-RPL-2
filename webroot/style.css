@@ -90,6 +90,7 @@ body {
 .about-class {
   display: flex;
   flex-direction: column
+  gap: 1vw;
 }
 
 .laman-utama {
@@ -128,6 +129,13 @@ body {
   gap: 1vw;
   padding: 1vw;
   background-color: #ab88f7bf;
+  border-radius: 2vw;
+}
+
+.jadwal-class .laman-layout-card {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
 }
 
 .laman-profile-wali {
