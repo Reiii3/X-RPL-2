@@ -60,7 +60,8 @@ body {
 .button-navigasi {
   background-color: #428dde;
   border-radius: 2vw;
-  padding: 1vw;
+  padding: 1.5vw;
+  margin-right: 1vw;
 }
 
 .button-navigasi i {
