@@ -1,11 +1,12 @@
 class MainWeb {
   constructor(){
     this.developer = "Reii";
+    this.navigasiStats = true;
+    this.initDoxument();
   }
   initDoxument() {
     this.idBtnNavigasi = document.getElementById("btn-navigasi")
     this.eventList();
-    this.navigasiStats = true;
   }
   eventList() {
     this.idBtnNavigasi.addEventListener("click", () => {
