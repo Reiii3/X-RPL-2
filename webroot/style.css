@@ -24,6 +24,10 @@ body {
   z-index: 100;
 }
 
+.closed-container {
+  text-align: center;
+}
+
 .navigasi {
   background-color: #1E40AF;
   display: flex;
