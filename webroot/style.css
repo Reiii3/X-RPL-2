@@ -7,6 +7,16 @@ body {
   background-color: #F1F5F9;
 }
 
+.link-closed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fafbfdbb;
+  text-align: center;
+}
+
 .navigasi {
   background-color: #1E40AF;
   display: flex;
