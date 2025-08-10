@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -13,7 +13,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fafbfdbb;
+  background-color: white;
   opacity: 1;
   display: flex;
   flex-direction: column;
