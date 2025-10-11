@@ -46,6 +46,7 @@ header {
 
 .btn i {
   color: #fff;
+  transition: 0.3s ease-in-out;
   font-size: 4vw;
 }
 
@@ -86,4 +87,8 @@ header {
   transition: all 0.3s ease-in-out;
   opacity: 0.5;
   transform: translateX(100%);
+}
+
+.btn i:hover {
+  color: #8E2DE2;
 }
