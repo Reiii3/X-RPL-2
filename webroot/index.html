@@ -3,111 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>X-RPL-2 SMKN 1 Kota Pasuruan</title>
-  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <title>X RPL 2 SMK NEGERI 1 KOTA PASURUAN</title>
+  <link rel="stylesheet" href="./src/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="link-closed">
-    <div class="closed-container">
-      <h1>404 Not Found</h1>
-      <p>See You Next Time🙏</p>
+  <header>
+    <div class="placeholder-logo">
+      <img src="./asset/logo.png" alt="Logo Rpl">
     </div>
-  </div>
-  <header style="display: none;">
-    <nav class="navigasi">
-      <div class="logo-rpl-placeholder">
-        <img src="./asset/1752833460638.png" alt="rpl-logo" />
-      </div>
-      <div><h3>X RPL 2</h3></div>
-      <div class="button-navigasi" ><i class="fas fa-bars" id="btn-navigasi"></i></div>
-    </nav>
+    <div class="btn">
+      <i class="fa-solid fa-bars" id="btn-nav"></i>  <!-- hamburger menu -->
+    </div>
   </header>
-  <div class="navigasi-hidden" style="display: none;">
-    <ul>
-      <li><i class="fas fa-home"></i><a href="#">Home Class</a></li>
-      <li><i class="fas fa-info-circle"></i><a href="#">About Class</a></li>
-      <li><i class="fas fa-images"></i><a href="#">Media Class</a></li>
-    </ul>
-  </div>
-  <div class="laman-utama" style="display: none;">
-    <div class="judul-laman">
-      <h1 data-aos="zoom-in" data-aos-delay="500" >X RPL 2 -- SKENSA</h1>
-    </div>
-    <div data-aos="zoom-in" class="laman-struckture">
-      <h2 data-aos="zoom-in">STRUKTURE KELAS</h2>
-      <div data-aos="zoom-in" data-aos-delay="500" class="laman-profile-wali">
-        <div class="title"><p>Wali Kelas</p></div>
-        <div class="placeholder-profile">
-          <img src="" alt="" />
-        </div>
-        <hr>
-        <div class="name"><p>Nama Guru</p></div>
-      </div>
-      <div class="border-layout-murid">
-        <div data-aos="zoom-in" data-aos-delay="500" class="laman-profile-murid">
-          <div class="title"><p>Ketua</p></div>
-          <div class="placeholder-profile">
-            <img src="" alt="" />
-          </div>
-          <hr />
-          <div class="name"><p>Nama Murid</p></div>
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="500" class="laman-profile-murid">
-          <div class="title"><p>Wakil Ketua</p></div>
-          <div class="placeholder-profile">
-            <img src="./asset/IMG-20250720-WA0111.jpg" alt="" />
-          </div>
-          <hr>
-          <div class="name"><p>Nama Murid</p></div>
-        </div>
-      </div>
-      <div class="border-layout-murid">
-        <div data-aos="zoom-in" data-aos-delay="500" class="laman-profile-murid">
-          <div class="title"><p>Bendahara</p></div>
-          <div class="placeholder-profile">
-            <img src="" alt="" />
-          </div>
-          <hr />
-          <div class="name"><p>Nama Murid</p></div>
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="500" class="laman-profile-murid">
-          <div class="title"><p>Sekertaris</p></div>
-          <div class="placeholder-profile">
-            <img src="./asset/IMG-20250720-WA0115.jpg" alt="" />
-          </div>
-          <hr>
-          <div class="name"><p>Nama Murid</p></div>
-        </div>
-      </div>
-    </div>
-    <div data-aos="zoom-in" class="jadwal-class">
-      <h2>Jadwal Kelas</h2>
-      <div class="laman-layout-card">
-        <div data-aos="zoom-in" data-aos-delay="500" class="card-jadwal">
-          <div class="jadwal-day-teks"><p>senin</p></div>
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="500" class="card-jadwal">
-          <div class="jadwal-day-teks"><p>selasa</p></div>
-        </div>
-      </div>
-      <div data-aos="zoom-in" data-aos-delay="500" class="laman-layout-card">
-        <div class="card-jadwal">
-          <div class="jadwal-day-teks"><p>rabu</p></div>
-          
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="500" class="card-jadwal">
-          <div class="jadwal-day-teks"><p>kamis</p></div>
-        </div>
-      </div>
+  <div class="black-layout"></div>
+  <div class="navigasi">
+    <h1 class="tittle-nav">X RPL 2</h1>
+    <div class="navigasi-hidden">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
   </div>
-  <script src="index.js" type="text/javascript" charset="utf-8"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+
+  <script src="./src/js/index.js"></script>
 </body>
 </html>
