@@ -66,11 +66,11 @@ header {
   flex-direction: column;
   gap: 3%;
 }
-.navigasi-hidden ul {
+.navigasi-hidden {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
 }
 
 .list-nav {
@@ -84,17 +84,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5%;
+}
+
+.list-nav:hover {
+  transform: scale(1.1);
 }
 
 .list-nav p {
-  font-size: 3rem;
+  font-size: clamp(8px, 2.5vw, 60px);
   font-family: "Arial", sans-serif;
   transition: 0.3s ease-in-out;
 }
 
 .list-nav i {
-  font-size: 3.5rem;
+  font-size: clamp(8px, 2.5vw, 60px);
 }
 
 .copyright {
@@ -109,8 +112,15 @@ header {
 }
 
 .copyright p {
-  font-size: 2.2rem;
+  font-size: clamp(4px, 2vw, 60px);
   font-family: 'Arial', sans-serif;
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background-color: #454546;
 }
 
 .tittle-nav {
@@ -125,10 +135,10 @@ header {
   background-color: black;
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
+  right: 0;
   z-index: 1;
+  width: 40%;
   transition: all 0.3s ease-in-out;
   opacity: 0.5;
   transform: translateX(100%);
