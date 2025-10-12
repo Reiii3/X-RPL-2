@@ -66,6 +66,52 @@ header {
   flex-direction: column;
   gap: 3%;
 }
+.navigasi-hidden ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list-nav {
+  width: 100%;
+  padding: 2vw;
+  border-radius: 1vw;
+  background-color: #3A0CA3;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.list-nav p {
+  font-size: 3rem;
+  font-family: "Arial", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.list-nav i {
+  font-size: 3.5rem;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.6vw;
+  text-align: center;
+  background: linear-gradient(100deg, #2F0743, #8E2DE2);
+  color: #fff;
+}
+
+.copyright p {
+  font-size: 2.2rem;
+  font-family: 'Arial', sans-serif;
+}
 
 .tittle-nav {
   font-size: 7vw;
