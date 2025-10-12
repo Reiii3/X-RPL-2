@@ -16,7 +16,7 @@ class MainWeb {
     });
     this.blackLayoutNav.addEventListener('click', () => {
       this.layoutNavigasi.style.transform = 'translateX(-100%)';
-      this.blackLayoutNav.style.transform = 'translateX(100%)';
+      this.blackLayoutNav.style.transform = 'translateX(-100%)';
     });
   }
 }

@@ -40,7 +40,7 @@ header {
 }
 
 .btn {
-  padding: 2vw;
+  padding: 1.6vw;
   background-color: #3A0CA3;
   border-radius: 1vw;
 }
@@ -48,7 +48,7 @@ header {
 .btn i {
   color: #fff;
   transition: 0.3s ease-in-out;
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 .navigasi {
@@ -61,7 +61,7 @@ header {
   z-index: 1;
   transition: all 0.3s ease-in-out;
   transform: translateX(-100%);
-  padding: 2vw;
+  padding: 3.5vw;
   display: flex;
   flex-direction: column;
   gap: 3%;
@@ -127,21 +127,97 @@ header {
   font-size: 7vw;
   text-align: end;
   color: #fff;
+  text-shadow: 5px 5px 8px #fcfcfc;
 }
 
+.tittle-teks {
+  font-size: 6vw;
+  text-align: center;
+  font-weight: 700;
+  color: #292929;
+  font-family: "Arial", sans-serif;
+  text-shadow: 5px 5px 10px #000000;
+}
 
+.container-all-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(10px, 3vw, 60px);
+}
+
+.title-element {
+  /* background-image: linear-gradient(100deg, #2F0743, #8E2DE2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; */
+  background-image: url(/webroot/asset/Fotbar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: clamp(100px, 50vh, 2600px);
+  width: 100%;
+  padding-top: 3%;
+}
+
+.layout-profile-class {
+  background: linear-gradient(135deg, #1E1B2E, #3E2C73);
+  filter: drop-shadow(0 4px 15px rgba(142, 45, 226, 0.4));
+  width: 80%;
+  padding: 5vw;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(10px, 2.5vw, 60px);
+}
+
+.tittle-layout {
+  border-bottom: #d7d7d7 2px solid;
+  padding-bottom: 1vw;
+  margin-bottom: 2vw;
+  color: #fff;
+  font-size: clamp(8px, 2.5vw, 60px);
+  font-family: "Arial", sans-serif;
+}
+
+.container-list-card {
+  display: flex;
+  gap: 5%;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  background: linear-gradient(135deg, #1E1B2E, #3E2C73);
+  filter: drop-shadow(0 3px 15px rgba(142, 45, 226, 0.4));
+  padding: 2vw;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+  color: #fff;
+  font-size: clamp(8px, 2.5vw, 60px);
+  font-family: "Arial", sans-serif;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
 
 .black-layout {
   background-color: black;
   position: fixed;
   top: 0;
   bottom: 0;
+  left: 0;
   right: 0;
   z-index: 1;
-  width: 40%;
   transition: all 0.3s ease-in-out;
   opacity: 0.5;
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 .btn i:hover {
