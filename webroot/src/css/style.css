@@ -151,7 +151,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text; */
-  background-image: url(/webroot/asset/Fotbar.jpg);
+  background-image: url("../webroot/asset/Fotbar.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
