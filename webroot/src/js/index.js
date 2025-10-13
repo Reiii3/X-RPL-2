@@ -2,6 +2,16 @@ class MainWeb {
   constructor(){
     this.developer = "Reii";
     this.initDoxument();
+    this.deviceChaker();
+  }
+
+  deviceChaker() {
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      console.log("User pakai mobile device");
+    } else {
+      console.log("User pakai PC/laptop");
+      document.querySelector('.layout-warning').style.display = 'flex';
+    }
   }
   initDoxument() {
     this.btnNav = document.getElementById('btn-nav');
