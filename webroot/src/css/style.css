@@ -130,20 +130,14 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: teksAnimation 1s ease-in-out infinite alternate;
 }
 
 .tittle-teks {
   font-size: 6vw;
   text-align: center;
-  font-weight: 700;
+  font-weight: 750;
   color: #292929;
   font-family: "Arial", sans-serif;
-  animation: teksAnimation 1s ease-in-out infinite alternate;
-}
-
-.tittle-teks:nth-child(2) {
-  animation: teksAnimation 1.2s ease-in-out infinite alternate;
 }
 
 .container-all-element {
