@@ -21,9 +21,9 @@ header {
 .placeholder-logo {
   width: 10%;
   height: 10%;
-  background-color: #300644;
+  background: rgb(30, 30, 30);
   border-radius: 2.5vw;
-  box-shadow: -0.5vw -0.5vw 1vw #361655;
+  filter: drop-shadow(0 0 5px rgba(255,255,255,0.4));
   transition: all 0.3s ease-in-out;
   position: relative;
   z-index: 100;
@@ -126,8 +126,11 @@ header {
 .tittle-nav {
   font-size: 7vw;
   text-align: end;
-  color: #fff;
-  text-shadow: 5px 5px 8px #fcfcfc;
+  background-image: linear-gradient(100deg, #2F0743, #8E2DE2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: teksAnimation 1s ease-in-out infinite alternate;
 }
 
 .tittle-teks {
@@ -136,7 +139,11 @@ header {
   font-weight: 700;
   color: #292929;
   font-family: "Arial", sans-serif;
-  text-shadow: 5px 5px 10px #000000;
+  animation: teksAnimation 1s ease-in-out infinite alternate;
+}
+
+.tittle-teks:nth-child(2) {
+  animation: teksAnimation 1.2s ease-in-out infinite alternate;
 }
 
 .container-all-element {
@@ -222,4 +229,14 @@ header {
 
 .btn i:hover {
   color: #8E2DE2;
+}
+
+@keyframes teksAnimation {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
 }
