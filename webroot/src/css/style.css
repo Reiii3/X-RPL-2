@@ -164,8 +164,8 @@ header {
 .layout-profile-class {
   background: linear-gradient(135deg, #1E1B2E, #3E2C73);
   filter: drop-shadow(0 4px 15px rgba(142, 45, 226, 0.4));
-  width: 80%;
-  padding: 5vw;
+  width: 85%;
+  padding: 4vw;
   border-radius: 1vw;
   display: flex;
   flex-direction: column;
@@ -184,7 +184,7 @@ header {
 
 .container-list-card {
   display: flex;
-  gap: 5%;
+  gap: 4%;
   width: 100%;
 }
 
