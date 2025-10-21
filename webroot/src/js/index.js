@@ -2,7 +2,7 @@ class MainWeb {
   constructor(){
     this.developer = "Reii";
     this.initDoxument();
-    this.deviceChaker();
+    // this.deviceChaker();
   }
 
   deviceChaker() {
@@ -17,6 +17,10 @@ class MainWeb {
     this.btnNav = document.getElementById('btn-nav');
     this.layoutNavigasi = document.querySelector('.navigasi');
     this.blackLayoutNav = document.querySelector('.black-layout');
+    this.idBtnNavAbout = document.getElementById('about-id');
+    this.idBtnNavProfT = document.getElementById('profileT-id');
+    this.idBtnNavProfS = document.getElementById('profileS-id');
+    this.idBtnNavProfD = document.getElementById('profileD-id');
     this.eventList();
   }
   eventList() {
@@ -28,6 +32,18 @@ class MainWeb {
       this.layoutNavigasi.style.transform = 'translateX(-100%)';
       this.blackLayoutNav.style.transform = 'translateX(-100%)';
     });
+    this.idBtnNavAbout.addEventListener('click', () => {
+      console.log('about-action');
+    });
+    this.idBtnNavProfT.addEventListener('click', () => {
+      console.log('profile-teacher-action');
+    })
+    this.idBtnNavProfS.addEventListener('click', () => {
+      console.log('profile-student-action');
+    })
+    this.idBtnNavProfD.addEventListener('click', () => {
+      console.log('profile-developer-action');
+    })
   }
 }
 new MainWeb()

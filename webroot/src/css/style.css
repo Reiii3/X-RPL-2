@@ -8,15 +8,21 @@ body {
   font-family: "Arial", sans-serif;
   background: linear-gradient(to left #41295a, #2F0743);
   margin-bottom: 4%;
+  margin-top: 13%;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.6vw;
   background: linear-gradient(100deg, #2F0743, #8E2DE2);
   color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .placeholder-logo {
@@ -30,13 +36,31 @@ header {
   z-index: 100;
 }
 
+.placeholder-logo-nav {
+  width: 22%;
+  background: rgb(30, 30, 30);
+  border-radius: 2vw;
+  filter: drop-shadow(0 0 5px rgba(255,255,255,0.4));
+  transition: all 0.3s ease-in-out;
+}
+
 .placeholder-logo img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
+.placeholder-logo-nav img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .placeholder-logo:hover {
+  transform: scale(1.1);
+}
+
+.placeholder-logo-nav:hover {
   transform: scale(1.1);
 }
 
@@ -71,7 +95,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 16px;
+  gap: 17px;
 }
 
 .list-nav {
@@ -125,8 +149,13 @@ header {
 }
 
 .tittle-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tittle-nav h1 {
   font-size: 7vw;
-  text-align: end;
   background-image: linear-gradient(100deg, #2F0743, #8E2DE2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -219,13 +248,79 @@ header {
   color: #fff;
   font-size: clamp(8px, 2.5vw, 60px);
   font-family: "Arial", sans-serif;
-  transition: 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .card:hover {
   transform: scale(1.1);
 }
 
+.hidden-profile {
+  position: fixed;
+  background-color: #1E1B2E;
+  left: 0;
+  right: 0;
+  top: 50%;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 4%;
+  border-radius: 4% 4% 0 0;
+  transform: translateY(100%);
+}
+
+.placeholder-profile i {
+  font-size: clamp(85px, 5.5vw, 1000px);
+  color: white;
+}
+
+.container-table {
+    width: 85%;
+}
+
+.container-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 1vw;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-table h2 {
+  font-size: clamp(8px, 2.5vw, 60px);
+  font-family: "Arial", sans-serif;
+  color: #121212;
+  margin-bottom: 2vw;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container-table thead {
+  background: linear-gradient(135deg, #6D28D9, #8B5CF6);
+}
+
+.container-table th {
+  padding: 1%;
+  text-align: left;
+  color: #fff;
+  font-size: clamp(8px, 1.3vw, 60px);
+  font-family: "Arial", sans-serif;
+}
+
+.container-table td {
+    padding: 1vw;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #121212;
+    font-size: clamp(8px, 1.3vw, 60px);
+    font-family: "Arial", sans-serif;
+}
+
+.container-table tr:nth-child(even) {
+  background-color: #eee;
+}
 .black-layout {
   background-color: black;
   position: fixed;

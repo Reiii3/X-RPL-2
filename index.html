@@ -14,7 +14,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="placeholder-logo">
       <img src="./webroot/asset/logo.png" alt="Logo Rpl">
     </div>
@@ -29,21 +29,26 @@
   </div>
   <div class="black-layout"></div>
   <div class="navigasi">
-    <h1 class="tittle-nav">X RPL 2</h1>
+    <div class="tittle-nav">
+      <div class="placeholder-logo-nav">
+        <img src="./webroot/asset/logo.png" alt="Logo Rpl">
+      </div>
+      <h1>X RPL 2</h1>
+    </div>
     <div class="navigasi-hidden">
-      <div class="list-nav">
+      <div class="list-nav" id="about-id">
         <p>About Class</p>
         <i class="fa-solid fa-chalkboard"></i>
       </div>
-      <div class="list-nav">
+      <div class="list-nav" id="profileT-id">
         <p>Profile Teacher</p>
         <i class="fa-solid fa-user-tie"></i>
       </div>
-      <div class="list-nav">
+      <div class="list-nav" id="profileS-id">
         <p>Profile Student</p>
         <i class="fa-solid fa-user-graduate"></i>
       </div>
-      <div class="list-nav">
+      <div class="list-nav" id="profileD-id">
         <p>Profile Developer</p>
         <i class="fa-solid fa-laptop-code"></i>
       </div>
@@ -90,11 +95,11 @@
       </div>
       <div class="container-list-card">
         <div class="card">
-          <p class="tittle-card">Wakil Ketua</p>
+          <p class="tittle-card">Ketua</p>
           <p>Gavril</p>
         </div>
         <div class="card">
-          <p class="tittle-card">Ketua</p>
+          <p class="tittle-card">Wakil Ketua</p>
           <p>Irfan</p>
         </div>
       </div>
@@ -109,9 +114,108 @@
         </div>
       </div>
     </div>
+    <div class="hidden-profile">
+      <div class="placeholder-profile">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="keterangan-profile">
+
+      </div>
+    </div>
+    <div class="container-table">
+      <h2>GURU PENGAJAR</h2>
+      <table>
+        <thead>
+          <th>NO</th>
+          <th>NAMA GURU</th>
+          <th>MATA PELAJARAN</th>
+          <th>HARI</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Bu Setyowati</td>
+            <td>PPKN</td>
+            <td>Rabu</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Bu Kholifatul</td>
+            <td>Bahasa Inggris</td>
+            <td>Senin - Selasa</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Pak Heru</td>
+            <td>Olahraga</td>
+            <td>Senin - Rabu</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Pak Alvin</td>
+            <td>PAI</td>
+            <td>Senin</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Pak Asep</td>
+            <td>Informatika</td>
+            <td>Rabu</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Bu Erni</td>
+            <td>IPAS</td>
+            <td>Senin - Selasa</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Pak Edi</td>
+            <td>Matematika</td>
+            <td>Rabu - Kamis</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Bu Nurma</td>
+            <td>Produktif</td>
+            <td>Kamis - Jum'at</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Bu Venus</td>
+            <td>Bahasa Indonesia</td>
+            <td>Selasa - Rabu</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Pak Rosidi</td>
+            <td>Seni Budaya</td>
+            <td>Selasa</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Bu Niken</td>
+            <td>BK</td>
+            <td>Kamis</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Bu Dita</td>
+            <td>Bahasa Jawa</td>
+            <td>Selasa</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Pak Alvan</td>
+            <td>Sejarah</td>
+            <td>Selasa</td>
+          </tr>
+      </table>
+    </div>
   </div>
 
   <script src="./webroot/src/js/index.js"></script>
+  <script src="./webroot/src/js/navLoad.js"></script>
   <script>
     AOS.init();
   </script>
