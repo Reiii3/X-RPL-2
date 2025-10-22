@@ -3,6 +3,7 @@ class MainWeb {
     this.developer = "Reii";
     this.initDoxument();
     this.deviceChaker();
+    this.jadwalChecker();
   }
 
   deviceChaker() {
@@ -12,6 +13,15 @@ class MainWeb {
       console.log("User pakai PC/laptop");
       document.querySelector('.layout-warning').style.display = 'flex';
     }
+  }
+
+  jadwalChecker() {
+    const date = new Date();
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const dayName = days[date.getDay()];
+
+  console.log(dayName); // Contoh output: "Wednesday"
+
   }
   initDoxument() {
     this.btnNav = document.getElementById('btn-nav');

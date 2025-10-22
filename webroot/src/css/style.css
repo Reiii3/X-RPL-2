@@ -276,11 +276,11 @@ body {
   color: white;
 }
 
-.container-table {
+.container-table, .container-table-jadwal {
     width: 85%;
 }
 
-.container-table table {
+.container-table table, .container-table-jadwal table {
     width: 100%;
     border-collapse: collapse;
     border-radius: 1vw;
@@ -288,7 +288,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.container-table h2 {
+.container-table h2, .container-table-jadwal h2 {
   font-size: clamp(8px, 2.5vw, 60px);
   font-family: "Arial", sans-serif;
   color: #121212;
@@ -297,11 +297,11 @@ body {
   text-align: center;
 }
 
-.container-table thead {
+.container-table thead, .container-table-jadwal thead {
   background: linear-gradient(135deg, #6D28D9, #8B5CF6);
 }
 
-.container-table th {
+.container-table th, .container-table-jadwal th {
   padding: 1%;
   text-align: left;
   color: #fff;
@@ -309,7 +309,7 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-.container-table td {
+.container-table td, .container-table-jadwal td {
     padding: 1vw;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -319,6 +319,10 @@ body {
 }
 
 .container-table tr:nth-child(even) {
+  background-color: #eee;
+}
+
+.container-table-jadwal tr:nth-child(even) {
   background-color: #eee;
 }
 .black-layout {
