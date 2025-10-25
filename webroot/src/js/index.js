@@ -2,7 +2,7 @@ class MainWeb {
   constructor(){
     this.developer = "Reii";
     this.initDoxument();
-    //this.deviceChaker();
+    this.deviceChaker();
     this.jadwalChecker();
   }
 
