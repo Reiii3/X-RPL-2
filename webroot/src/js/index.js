@@ -2,7 +2,7 @@ class MainWeb {
   constructor(){
     this.developer = "Reii";
     this.initDoxument();
-    this.deviceChaker();
+    //this.deviceChaker();
     this.jadwalChecker();
   }
 
@@ -104,6 +104,16 @@ class MainWeb {
         12: ["Pramuka", "Anak Pramuka"],
       }
     },
+    Saturday: {
+      matapelajaran: {
+        1: "Libur Woii!!"
+      }
+    },
+    Sunday: {
+      matapelajaran: {
+        1: "Libur Woii!!"
+      }
+    },
     listJam: {
       1: '06.50 - 07.40',
       2: '07.40 - 08.20',
@@ -137,6 +147,11 @@ class MainWeb {
     } else if(data == "Sholat Jum'at") {
       const templateTable = `
         <td colspan="5" style="text-align: center; font-weight: 600; font-size: clamp(8px, 1.7vw, 60px);">Sholat Jum'at</td>
+      `
+      colm.innerHTML = templateTable;
+    } else if(data == "Libur Woii!!") {
+      const templateTable = `
+        <td colspan="5" style="text-align: center; font-weight: 600; font-size: clamp(10px, 2vw, 60px);">Libur Woii!!</td>
       `
       colm.innerHTML = templateTable;
     } else {

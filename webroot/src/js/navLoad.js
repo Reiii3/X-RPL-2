@@ -10,7 +10,7 @@ class LoadNav {
         this.systemLoad()
     }
     systemLoad() {
-        fetch("")
+        fetch("https://raw.githubusercontent.com/Reiii3/X-RPL-2/main/index.html")
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
@@ -18,8 +18,8 @@ class LoadNav {
             const nav = htmlDoc.querySelector('.navigasi');
             const header = htmlDoc.querySelector('.header');
             console.log(nav)
-            this.layoutNav.innerHTML = nav;
-            this.layoutHeader.innerHTML = header;
+            this.layoutNav.innerHTML = nav.outerHTML;
+            this.layoutHeader.innerHTML = header.outerHTML;
         });
     } 
 }
