@@ -342,6 +342,143 @@ body {
   color: #8E2DE2;
 }
 
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  margin-top: 25px;
+}
+
+.container-footer {
+  background: linear-gradient(135deg, #1E90FF, #7B68EE);
+  padding: 15px;
+  padding-bottom: 30px;
+}
+
+.container-footer .title-component {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.layout-media {
+  display: flex;
+  gap: 10px;
+}
+
+.layout-media i {
+  font-size: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.list-information-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-information-layout ul {
+  /* background-color: #1E90FF; */
+  padding: 25px;
+  margin-top: 45px;
+}
+
+.title {
+  font-size: 23px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.list-information-layout ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-information-layout ul li a {
+  text-decoration: none;
+  color: #222222;
+  -webkit-tap-highlight-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.list-information-layout ul li a:hover {
+  color: #ccc;
+}
+
+.layout-media i:nth-child(1) {
+  color: white;
+  background-color: #1877F2;
+  transition: 0.5s ease-in-out;
+}
+
+.layout-media i:nth-child(1):hover {
+  color: #1877F2;
+  background-color: white;
+  transform: translateY(-22px);
+}
+
+.layout-media i:nth-child(2) {
+  color: white;
+  background-color: #25D366;
+  transition: 0.5s ease-in-out;
+}
+
+.layout-media i:nth-child(2):hover {
+  color: #25D366;
+  background-color: white;
+  transform: translateY(-22px);
+}
+
+.layout-media i:nth-child(3) {
+  color: white;
+  background-color: #1DA2F2;
+  transition: 0.5s ease-in-out;
+}
+
+.layout-media i:nth-child(3):hover {
+  color: #1DA2F2;
+  background-color: white;
+  transform: translateY(-22px);
+}
+
+.layout-media i:nth-child(4) {
+  color: white;
+  background-color: #0088CC;
+  transition: 0.5s ease-in-out;
+}
+
+.layout-media i:nth-child(4):hover {
+  color: #0088CC;
+  background-color: white;
+  transform: translateY(-22px);
+}
+
+.layout-media i:nth-child(5) {
+  color: white;
+  background-color: #010101;
+  transition: 0.5s ease-in-out;
+}
+
+.layout-media i:nth-child(5):hover {
+  color: #010101;
+  background-color: white;
+  transform: translateY(-22px);
+}
+
+.layout-media i:nth-child(6) {
+  color: white;
+  background-color: #E44D5F;
+  transition: 0.5s ease-in-out;
+}
+
+.layout-media i:nth-child(6):hover {
+  color: #E44D5F;
+  background-color: white;
+  transform: translateY(-22px);
+}
+
 @keyframes teksAnimation {
   0% {
     transform: translateY(10px);
