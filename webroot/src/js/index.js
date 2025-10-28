@@ -2,7 +2,7 @@ class MainWeb {
   constructor(){
     this.developer = "Reii";
     this.initDoxument();
-    this.deviceChaker();
+    // this.deviceChaker();
     this.jadwalChecker();
   }
 
@@ -140,13 +140,13 @@ class MainWeb {
     const colm = document.createElement('tr');
     if (data == "Istirahat") {
       const templateTable = `
-        <td colspan="5" style="text-align: center; font-weight: 600; font-size: clamp(8px, 1.7vw, 60px);">Istirahat</td>
+        <td colspan="5" style="text-align: center; font-weight: 600; font-size: 10px;">Istirahat</td>
       `
       colm.innerHTML = templateTable;
       console.log(`Istirahat ${ind}`)
     } else if(data == "Sholat Jum'at") {
       const templateTable = `
-        <td colspan="5" style="text-align: center; font-weight: 600; font-size: clamp(8px, 1.7vw, 60px);">Sholat Jum'at</td>
+        <td colspan="5" style="text-align: center; font-weight: 600; font-size: 10px;">Sholat Jum'at</td>
       `
       colm.innerHTML = templateTable;
     } else if(data == "Libur Woii!!") {
