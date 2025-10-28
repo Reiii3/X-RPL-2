@@ -81,8 +81,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
   width: clamp(320px, 35%, 400px);
-  height: 100vh;
   z-index: 1;
   transition: all 0.3s ease-in-out;
   transform: translateX(-100%);
@@ -247,7 +247,7 @@ body {
 .card {
   background: linear-gradient(135deg, #1E1B2E, #3E2C73);
   filter: drop-shadow(0 3px 15px rgba(142, 45, 226, 0.4));
-  flex: 1 1 clamp(100px, 45%, 1000px);
+  flex: 1 1 clamp(150px, 45%, 1000px);
   padding: 12px;
   border-radius: 10px;
   display: flex;
