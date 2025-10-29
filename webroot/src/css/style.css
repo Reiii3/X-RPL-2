@@ -116,7 +116,7 @@ body {
 }
 
 .list-nav p {
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Arial", sans-serif;
   transition: 0.3s ease-in-out;
 }
@@ -192,14 +192,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   gap: 20px;
 }
 
 .container-information-class, .container-jadwal-class {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
   width: 100%;
   padding: 10px
 }
@@ -221,7 +222,7 @@ body {
 .layout-profile-class, .layout-structur-pengurus {
   background: linear-gradient(135deg, #1E1B2E, #3E2C73);
   filter: drop-shadow(0 4px 15px rgba(142, 45, 226, 0.4));
-  width: clamp(450px, 30%, 900px);
+  width: clamp(450px, 40%, 900px);
   padding: 15px;
   border-radius: 10px;
   display: flex;
@@ -242,6 +243,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  width: 100%;
 }
 
 .card {
@@ -373,6 +375,13 @@ footer {
   align-items: center;
 }
 
+.container-footer .title-component h1 {
+  background-image: linear-gradient(100deg, #2F0743, #8E2DE2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .layout-media {
   display: flex;
   gap: 10px;
@@ -387,7 +396,8 @@ footer {
 
 .list-information-layout {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .list-information-layout ul {
@@ -398,20 +408,36 @@ footer {
 
 .title-information {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Arial", sans-serif;
   color: #fff;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-information i {
+  font-size: 20px;
+  color: #8E2DE2;
 }
 
 .list-information-layout ul {
   list-style: none;
   padding: 0;
+  width: 200px;
+}
+
+.list-information-layout ul li.list-once {
+  font-size: 15px;
+  font-family: "Monospace", sans-serif;
+  color: #c3c3c3;
 }
 
 .list-information-layout ul li a {
-  text-decoration: none;
+  font-family: "Monospace", sans-serif;
   color: #222222;
+  text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   transition: 0.3s ease-in-out;
   font-size: 15px;

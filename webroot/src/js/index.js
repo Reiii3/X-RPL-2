@@ -132,6 +132,8 @@ class MainWeb {
   }
 
   const dayName = days[date.getDay()];
+  const jam = date.getHours();
+  console.log(jam)
   console.log(dayName)
   console.log(jadwal[dayName])
   Object.keys(jadwal[dayName].matapelajaran).forEach((key, ind) => {
@@ -159,7 +161,7 @@ class MainWeb {
         <td>${jadwal.listJam[key]}</td>
         <td>${data[0]}</td>
         <td>${data[1]}</td>
-        <td></td>
+        <td>NOT FOUND</td>
         `
         colm.innerHTML = templateTable;
         console.log('Loss')
