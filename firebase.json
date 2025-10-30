@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "webroot/pages",
+    "public": "webroot",
     "ignore": [
       "firebase.json",
       "**/.*",
