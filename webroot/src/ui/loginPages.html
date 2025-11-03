@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Account</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="information-login">
+        <div class="title-component">
+            <h4>Login Information</h4>
+            <button id="logoutBtn">Logout</button>
+        </div>
+        <div class="layout-information">
+            <p id="email">Email : <span id="email-user"></span></p>
+            <p id="username">Username : <span id="username-user"></span> </p>
+        </div>
+    </div>
+
+    <form action="" id="loginForm">
+        <h1>Login</h1>
+        <label for="username-login">Username
+            <input type="text" name="username" id="username-login">
+        </label>
+        <label for="email-login">Email
+            <input type="email" name="username" id="email-login">
+        </label>
+        <label for="password">Password
+            <input type="password" name="password" id="password-login">
+        </label>
+        <button type="submit">Login</button>
+        <p>Belum punya akun? <a href="./registerPages.html" style="text-decoration: none;">Daftar</a></p>
+    </form>
+
+    <div class="notif" id="layout-notif">
+        <p id="notif-massagee">Pesan</p>
+    </div>
+    <script type="module" src="../js/authLogin.js"></script>
+</body>
+</html>

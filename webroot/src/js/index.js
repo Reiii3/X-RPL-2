@@ -180,6 +180,7 @@ class MainWeb {
     this.idBtnNavProfT = document.getElementById('profileT-id');
     this.idBtnNavProfS = document.getElementById('profileS-id');
     this.idBtnNavProfD = document.getElementById('profileD-id');
+    this.idBtnNavLogin = document.getElementById('login-id');
     this.eventList();
   }
   eventList() {
@@ -202,7 +203,11 @@ class MainWeb {
     })
     this.idBtnNavProfD.addEventListener('click', () => {
       console.log('profile-developer-action');
-    })
+    });
+    this.idBtnNavLogin.addEventListener('click', () => {
+      console.log('login-action');
+      window.location.href = './src/ui/loginPages.html'
+    });
   }
 }
 new MainWeb()
