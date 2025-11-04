@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
+    <div class="block-area-spiner" id="loader-blocking">
+        <div class="container-spiner" id="loader-spiner">
+        <div class="spiner"></div>
+        <h1>Please Wait</h1>
+        </div>
+    </div>
     <div class="information-login">
         <div class="title-component">
             <h4>Login Information</h4>
-            <button id="logoutBtn">Logout</button>
+            <button id="logoutBtn" style="display: none;">Logout</button>
         </div>
         <div class="layout-information">
             <p id="email">Email : <span id="email-user"></span></p>

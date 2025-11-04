@@ -67,44 +67,90 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
     const email = document.getElementById("email-login").value;
     const pass = document.getElementById("password-login").value;
     const username = document.getElementById("username-login").value;
+    const logoutBtn = document.getElementById("logoutBtn");
     try {
     await signInWithEmailAndPassword(auth, email, pass);
     notifShow("Login berhasil!");
         document.getElementById("username-user").textContent = username;
+        statusloginEmail.textContent = email;
+        logoutBtn.style.display = "block";
     } catch (error) {
-    notifShow(error.message);
+        notifShow(error.message);
     }
 });
 
 // === Logout ===
 document.getElementById("logoutBtn").addEventListener("click", async () => {
     await signOut(auth);
+    const logoutBtn = document.getElementById("logoutBtn");
     notifShow("Berhasil logout!");
+    logoutBtn.style.display = "none";
+    statusloginUsername.textContent = "Belum login";
+    statusloginEmail.textContent = "Belum login";
 });
 
 // === Cek User Aktif ===
-onAuthStateChanged(auth, async (user) => {
+// onAuthStateChanged(auth, async (user) => {
+//     if (user) {
+//     console.log(user.uid);
+//     const ref = doc(db, "users", user.uid);
+//     const snap = await getDoc(ref);
+//         if (snap.exists()) {
+//             const data = snap.data();
+//             console.log(data);
+//         }
+//     console.log("🔥 Cek dokumen:", ref.path);
+//     console.log("Ada dokumen?", snap.exists());
+//     console.log("Isi data:", snap.data());
+
+//     logoutBtn.style.display = "block";
+//     } else {
+//         statusloginEmail.textContent = "Belum login";
+//         statusloginUsername.textContent = "Belum login";
+//         logoutBtn.style.display = "none";
+//     }
+// });
+
+function promise(auth) {
+    return new Promise((resolve, reject) => {
+        const sup = onAuthStateChanged(auth, async (user) => {
+            sup();
+            resolve(user);
+        })
+    });
+}
+
+async function startCheckerData() {
+    const user = await promise(auth);
     const info = document.getElementById("userInfo");
     const logoutBtn = document.getElementById("logoutBtn");
+    const loadingElement = document.getElementById("loader-blocking")
     if (user) {
-    statusloginEmail.textContent = `${user.email}`;
-    
-    console.log(user.uid);
-    const ref = doc(db, "users", user.uid);
-    const snap = await getDoc(ref);
+        const ref = doc(db, "users", user.uid);
+        const snap = await getDoc(ref);
         if (snap.exists()) {
             const data = snap.data();
             console.log(data);
             statusloginUsername.textContent = data.username;
+            statusloginEmail.textContent = `${user.email}`;
         }
-    console.log("🔥 Cek dokumen:", ref.path);
-    console.log("Ada dokumen?", snap.exists());
-    console.log("Isi data:", snap.data());
-
-    logoutBtn.style.display = "block";
+        console.log("🔥 Cek dokumen:", ref.path);
+        console.log("Ada dokumen?", snap.exists());
+        console.log("Isi data:", snap.data());
+        loadingElement.style.opacity = "0";
+        setTimeout(() => {
+            loadingElement.style.display = "none";
+        }, 700);
+        logoutBtn.style.display = "block";
     } else {
         statusloginEmail.textContent = "Belum login";
         statusloginUsername.textContent = "Belum login";
         logoutBtn.style.display = "none";
+        loadingElement.style.opacity = "0";
+        setTimeout(() => {
+            loadingElement.style.display = "none";
+        }, 700);
     }
-});
+}
+
+startCheckerData();

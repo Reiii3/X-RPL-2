@@ -38,24 +38,55 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-onAuthStateChanged(auth, async (user) => {
-    const info = document.getElementById("userInfo");
-    const logoutBtn = document.getElementById("logoutBtn");
-    if (user) {
-    console.log(user.uid);
-    const ref = doc(db, "users", user.uid);
-    const snap = await getDoc(ref);
+// onAuthStateChanged(auth, async (user) => {
+//     const info = document.getElementById("userInfo");
+//     const logoutBtn = document.getElementById("logoutBtn");
+//     if (user) {
+//     console.log(user.uid);
+//     const ref = doc(db, "users", user.uid);
+//     const snap = await getDoc(ref);
+//         if (snap.exists()) {
+//             const data = snap.data();
+//             console.log(data);
+//             document.getElementById("account-nav").textContent = data.username;
+//         }
+//     console.log("🔥 Cek dokumen:", ref.path);
+//     console.log("Ada dokumen?", snap.exists());
+//     console.log("Isi data:", snap.data());
+//     logoutBtn.style.display = "block";
+//     } else {
+//         statusloginEmail.textContent = "Belum login";
+//         statusloginUsername.textContent = "Belum login";
+//     }
+// });
+
+function promise(auth) {
+    return new Promise((resolve, reject) => {
+        const sup = onAuthStateChanged(auth, async (user) => {
+            sup();
+            resolve(user);
+        })
+    });
+}
+
+// promise(auth).then((user) => console.log(`For Promise :` + user.uid));
+
+async function startCheckerData() {
+    const user = await promise(auth);
+    if ( user ) {
+        const ref = doc(db, "users", user.uid);
+        const snap = await getDoc(ref);
         if (snap.exists()) {
             const data = snap.data();
             console.log(data);
             document.getElementById("account-nav").textContent = data.username;
         }
-    console.log("🔥 Cek dokumen:", ref.path);
-    console.log("Ada dokumen?", snap.exists());
-    console.log("Isi data:", snap.data());
+        console.log("🔥 Cek dokumen:", ref.path);
+        console.log("Ada dokumen?", snap.exists());
+        console.log("Isi data:", snap.data());
     } else {
-        statusloginEmail.textContent = "Belum login";
-        statusloginUsername.textContent = "Belum login";
-        logoutBtn.style.display = "none";
+        console.log("Belum login");
     }
-});
+}
+
+startCheckerData();
